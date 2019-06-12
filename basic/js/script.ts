@@ -53,17 +53,21 @@ for (let i =1; i <= 10; ++i) {
 for (let i =1; i <= 10; ++i) {
 	var result: any = i * 1;
 
-	var loc = document.createElement('p');
-	let show = `${result} x 1 = ${result}`;
-	loc.innerHTML += show;
-
-
 	var divBoot = document.createElement('div');
 
 	var att = document.createAttribute('class');
 	att.value = "col-2";
 
 	divBoot.setAttributeNode(att);
+
+
+	for (let i =1; i <= 10; ++i)
+		var loc = document.createElement('p');
+		let show = `${result} x 1 = ${result}`;
+		loc.innerHTML += show;
+
+
+	
 
 	divBoot.innerHTML = show;
 	
