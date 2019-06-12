@@ -1,28 +1,15 @@
-/*
 var moltiply = document.getElementById('math_x');
-
-
-
-for (let i = 1; i <= 10; ++i) {
-
-    var result: any = i * 1;
-    var loc = document.createElement("p");
-    var show:string =(result+" X 1 = "+ result);
-
-    var tNode = document.createTextNode(show);
-    loc.appendChild(tNode);
-    moltiply.appendChild(loc);
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (var y = 0; y < arr.length; ++y) {
+    var divBoot = document.createElement("div");
+    divBoot.classList.add("col-12");
+    moltiply.appendChild(divBoot);
+    var arrNow = arr[y];
+    for (var i = 1; i <= arr.length; ++i) {
+        var result = i * arrNow;
+        var loc = document.createElement("p");
+        var show = [i] + " X " + arrNow + " =  " + result;
+        divBoot.appendChild(loc);
+        loc.innerHTML += show;
     }
-*/
-var moltiply = document.getElementById('math_x');
-var divBoot = document.createElement("div");
-divBoot.classList.add("col-12");
-moltiply.appendChild(divBoot);
-/*	var newDiv = document.getElementById('newDiv');*/
-for (var i = 1; i <= 10; ++i) {
-    var result = i * 1;
-    var loc = document.createElement("p");
-    var show = result + " X 1 =  " + result;
-    divBoot.appendChild(loc);
-    loc.innerHTML += show;
 }
